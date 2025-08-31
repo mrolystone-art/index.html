@@ -14,12 +14,36 @@
             background-color: rgb(66, 194, 236);
             box-sizing: border border-box; /* Change to border-box to include padding and border in width/height */
         }
+        .container {
+            display: flex;
+            gap: 10px; /* Space between items */
+            margin-top: 20px;background-color: lightsalmon;
+            width: 100%; /* Full width container */
+            height: 100px; /* Fixed height for the container */
+
+        }
+        .item {
+            flex: 1; /* Each item takes equal space */
+            padding: 10px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 5px;
+        }
     </style>
     </head>
-    <body>
+    <div>
         <div class="box">This box demonstrates the CSS Box Model. </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="container">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>Item 2</p>
+            </div>
+            <div class="item">
+                <p>Item 3</p>
+            </div>
+        </div>
     </body>
 </html>
